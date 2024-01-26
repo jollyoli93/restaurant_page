@@ -5,13 +5,14 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    text: './src/text.js',
+    loadpage: './src/loadpage.js',
     // add for new js bundles
   },
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
+      template: './src/template.html'
     }),
   ],
   output: {
