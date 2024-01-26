@@ -1,7 +1,6 @@
 import _ from 'lodash';
 import './style.css';
 import Icon from './icon.png';
-import hello from './text.js';
 
  function component() {
    const element = document.createElement('div');
@@ -16,7 +15,8 @@ import hello from './text.js';
 
    return element;
  }
-
- hello('Hello you cunt');
-
- document.body.appendChild(component());
+ const body = document.querySelector('body');
+ const title = document.createElement('div');
+ title.textContent += "Hello world"
+body.appendChild(title);
+document.body.appendChild(component());
