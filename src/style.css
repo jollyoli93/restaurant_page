@@ -1,5 +1,6 @@
 body, html {
   height: 100vh;
+  --headfoot: rgb(183, 220, 245);
 }
 
 body {
@@ -9,14 +10,18 @@ body {
 
 #content {
     flex: 1;
-    color: red;
     display: flex;
     flex-direction: column;
   }
 
 .header {
+  font-size: 5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
   min-height: 10vh;
-  border: solid red 1px;
+  min-width: 100vw;
+  background-color: var(--headfoot);
+  text-align: center;
 }
 
 .main {
@@ -29,21 +34,21 @@ grid-template-rows: 20vh 80vh;
 }
 
 .main .sidebar {
-  background-color: blue;
+  background-color: rgb(143, 143, 239);
   grid-column: 1 / 1;
   grid-row: 1/3
 }
 
 .main .hero {
-  background-color: black;
+  background-color: rgb(157, 210, 202);
 }
 
 .main .maincontent {
-  background-color: red;
+  background-color: rgb(207, 246, 246);
 }
 
 .footer {
-  border: solid blue 1px;
   min-height: 10vh;
   flex-shrink: 0;
+  background-color: var(--headfoot);
 }
