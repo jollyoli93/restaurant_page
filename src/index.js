@@ -1,7 +1,5 @@
 import _ from 'lodash';
 import './style.css';
-import {title, footer} from './loadpage';
+import {contents} from './loadpage';
 
-const content = document.querySelector('#content');
-
-content.appendChild(title());
+contents()
